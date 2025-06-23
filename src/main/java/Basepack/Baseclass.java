@@ -23,6 +23,7 @@ public class Baseclass {
 	    ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications"); 
         Map<String, Object> prefs = new HashMap<>();
+        //disable password change notifs
         prefs.put("credentials_enable_service", false);
         prefs.put("profile.password_manager_enabled", false);
         options.setExperimentalOption("prefs", prefs);
