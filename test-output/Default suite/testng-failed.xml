@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoginPack.Loginclassstepdef">
+      <class name="testcases.runnerclass">
         <methods>
-          <include name="enter_password"/>
-          <include name="openbrowser"/>
-          <include name="username"/>
-          <include name="homepage_title"/>
-          <include name="closingbrowser"/>
-          <include name="submit"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- LoginPack.Loginclassstepdef -->
+      </class> <!-- testcases.runnerclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

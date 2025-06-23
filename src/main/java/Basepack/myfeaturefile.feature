@@ -28,8 +28,9 @@ Feature: Check the application before login
   Scenario: Check add to cart
     Given URL is login with valid credentials
     Then  Click on add to cart
-    When  Value is added into cart
+    And   Value is added into cart
     And   Click on cart symnol
+    Then  Check product page
     When  Continue to checkout
     Then  Check the title
   
